@@ -79,6 +79,9 @@ The collections listing page lives in `src/app/collections/page.tsx` and compose
 ### 16. Collection Detail Page
 The collection detail page lives in `src/app/collections/[handle]/page.tsx` and fetches a single collection by handle, then renders its header and product grid with safe empty-state handling.
 
+### 17. Product Detail Page
+The product detail page lives in `src/app/products/[handle]/page.tsx` and fetches a single product by handle, then composes gallery, info, price, quantity, and add-to-cart UI around the normalized Shopify service data.
+
 ## Data Fetching
 - **Server Components:** Used for data fetching on initial page load (SEO friendly).
 - **Client Components:** Used for interactive elements (Cart, Search) and state management.

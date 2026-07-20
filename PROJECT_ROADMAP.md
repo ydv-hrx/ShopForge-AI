@@ -43,6 +43,9 @@ This roadmap outlines the development phases for ShopForge AI.
 ## Phase 5.2: Collection Detail Page
 - [x] Collection detail page
 
+## Phase 5.3: Product Detail Page
+- [x] Product detail page
+
 ## Phase 5: Agency & Marketing
 - [ ] Agency Website Sections (Portfolio, Services)
 - [ ] Lead Capture & Booking Integration
