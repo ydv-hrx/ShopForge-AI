@@ -52,6 +52,27 @@ The app shell is composed from reusable layout components in `src/components/lay
 ### 7. Homepage Hero
 The homepage hero lives in `src/components/home/hero.tsx` and composes existing UI primitives to create a premium full-width landing section without introducing Shopify data fetching or feature logic.
 
+### 8. Featured Collections
+The featured collections section lives in `src/components/home/featured-collections.tsx` and uses placeholder merchandising data with existing UI primitives to present a responsive collection grid without Shopify queries.
+
+### 9. Featured Products
+The featured products section lives in `src/components/home/featured-products.tsx` and uses placeholder catalog data with the shared UI primitives to present a responsive product grid without Shopify queries or feature logic.
+
+### 10. Benefits
+The benefits section lives in `src/components/home/benefits.tsx` and uses shared UI primitives to present a responsive trust-and-support grid with placeholder service content.
+
+### 11. Newsletter CTA
+The newsletter CTA lives in `src/components/home/newsletter.tsx` and uses the shared input and button primitives to present a static email capture prompt without submission logic or backend wiring.
+
+### 12. GraphQL Query Layer
+Reusable Shopify Storefront query constants live in `src/graphql/queries/` and define the shop, collections, and products query shapes without introducing fetch logic or service abstractions.
+
+### 13. Shopify Service Layer
+Shopify service functions live in `src/services/shopify/` and normalize query responses into reusable collection and product data, with a homepage coordinator that fetches both in parallel.
+
+### 14. Homepage Shopify Integration
+The homepage server component fetches Shopify homepage data once and passes normalized collections and products into the existing featured sections to keep data access out of the UI layer.
+
 ## Data Fetching
 - **Server Components:** Used for data fetching on initial page load (SEO friendly).
 - **Client Components:** Used for interactive elements (Cart, Search) and state management.

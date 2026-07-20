@@ -12,7 +12,8 @@ This roadmap outlines the development phases for ShopForge AI.
 ## Phase 2: Core Commerce Integration
 - [x] Design System Foundation (Button, Input, Card, Badge, Container, Section, Heading, Text, Spinner, Skeleton)
 - [x] Variants and accessibility-first primitives using `cva`
-- [ ] Shopify Storefront API Service Layer
+- [x] Shopify Storefront Query Layer (shop, collections, products)
+- [x] Shopify Storefront API Service Layer
 - [ ] GraphQL Query/Mutation Schema Definition
 - [ ] Product & Collection Fetching Logic
 - [ ] Initial Shop UI (Product Grid, Collection Pages)
@@ -20,6 +21,11 @@ This roadmap outlines the development phases for ShopForge AI.
 ## Phase 3: Essential Shopping Experience
 - [x] Global Layout Foundation (Announcement Bar, Responsive Navbar, Footer)
 - [x] Homepage Hero Section
+- [x] Featured Collections Section
+- [x] Featured Products Section
+- [x] Benefits Section
+- [x] Newsletter CTA Section
+- [x] Homepage Shopify Integration
 - [ ] Shopping Cart Management (Client-side & Shopify Sync)
 - [ ] Checkout Integration
 - [ ] Product Search & Filtering
