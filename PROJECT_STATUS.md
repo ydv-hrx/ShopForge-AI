@@ -31,6 +31,7 @@ Phase 3: Essential Shopping Experience
 - Newsletter CTA section
 - Homepage Shopify integration
 - Collections listing page
+- Collection detail page
 
 ## Remaining Phase 3 Work
 - Shopping cart management
@@ -39,4 +40,4 @@ Phase 3: Essential Shopping Experience
 - Customer account/authentication
 
 ## Current Constraint
-Do not begin cart, checkout, search, or auth until the collections listing page is approved.
+Do not begin cart, checkout, search, or auth until the collection detail page is approved.

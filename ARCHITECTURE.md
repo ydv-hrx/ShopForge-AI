@@ -76,6 +76,9 @@ The homepage server component fetches Shopify homepage data once and passes norm
 ### 15. Collections Listing Page
 The collections listing page lives in `src/app/collections/page.tsx` and composes a server-fetched collection list into a reusable grid and card pair that preserves the premium dark visual language.
 
+### 16. Collection Detail Page
+The collection detail page lives in `src/app/collections/[handle]/page.tsx` and fetches a single collection by handle, then renders its header and product grid with safe empty-state handling.
+
 ## Data Fetching
 - **Server Components:** Used for data fetching on initial page load (SEO friendly).
 - **Client Components:** Used for interactive elements (Cart, Search) and state management.
