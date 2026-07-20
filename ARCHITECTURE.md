@@ -73,6 +73,9 @@ Shopify service functions live in `src/services/shopify/` and normalize query re
 ### 14. Homepage Shopify Integration
 The homepage server component fetches Shopify homepage data once and passes normalized collections and products into the existing featured sections to keep data access out of the UI layer.
 
+### 15. Collections Listing Page
+The collections listing page lives in `src/app/collections/page.tsx` and composes a server-fetched collection list into a reusable grid and card pair that preserves the premium dark visual language.
+
 ## Data Fetching
 - **Server Components:** Used for data fetching on initial page load (SEO friendly).
 - **Client Components:** Used for interactive elements (Cart, Search) and state management.

@@ -14,7 +14,6 @@ type ShopifyCollectionNode = {
   title: string;
   description: string;
   image: ShopifyCollectionImage;
-  productsCount: number;
 };
 
 type ShopifyCollectionsResponse = {
@@ -36,7 +35,6 @@ export type FeaturedCollection = {
     width: number | null;
     height: number | null;
   } | null;
-  productsCount: number;
 };
 
 function normalizeCollectionImage(image: ShopifyCollectionImage) {
@@ -52,14 +50,15 @@ function normalizeCollectionImage(image: ShopifyCollectionImage) {
   };
 }
 
-function normalizeCollection(collection: ShopifyCollectionNode): FeaturedCollection {
+function normalizeCollection(
+  collection: ShopifyCollectionNode
+): FeaturedCollection {
   return {
     id: collection.id,
     handle: collection.handle,
     title: collection.title,
     description: collection.description,
     image: normalizeCollectionImage(collection.image),
-    productsCount: collection.productsCount,
   };
 }
 
@@ -74,6 +73,9 @@ export async function getFeaturedCollections(): Promise<FeaturedCollection[]> {
 
   return response.data.collections.edges
     .map((edge) => edge.node)
-    .filter((collection): collection is ShopifyCollectionNode => Boolean(collection))
+    .filter(
+      (collection): collection is ShopifyCollectionNode =>
+        collection !== null
+    )
     .map(normalizeCollection);
 }

@@ -59,7 +59,7 @@ export function FeaturedCollections({ collections }: FeaturedCollectionsProps) {
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(255,255,255,0.08),_transparent_55%)]" />
                   <div className="absolute left-4 top-4">
                     <Badge variant="accent" size="sm">
-                      {collection.productsCount} products
+                      Featured
                     </Badge>
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">

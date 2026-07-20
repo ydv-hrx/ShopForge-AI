@@ -37,6 +37,9 @@ This roadmap outlines the development phases for ShopForge AI.
 - [ ] Performance Optimization (ISR, Caching)
 - [ ] SEO & Metadata Strategy
 
+## Phase 5.1: Collections Listing Page
+- [x] Collections listing page
+
 ## Phase 5: Agency & Marketing
 - [ ] Agency Website Sections (Portfolio, Services)
 - [ ] Lead Capture & Booking Integration

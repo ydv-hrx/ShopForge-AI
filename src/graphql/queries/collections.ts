@@ -13,7 +13,7 @@ export const COLLECTIONS_QUERY = /* GraphQL */ `
             width
             height
           }
-          productsCount
+    
         }
       }
     }
